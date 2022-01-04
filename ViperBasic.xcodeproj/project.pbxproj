@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		18E6983D25DD3B1D00C99821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6983C25DD3B1D00C99821 /* AppDelegate.swift */; };
-		18E6983F25DD3B1D00C99821 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6983E25DD3B1D00C99821 /* SceneDelegate.swift */; };
 		18E6984125DD3B1D00C99821 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6984025DD3B1D00C99821 /* ViewController.swift */; };
 		18E6984425DD3B1D00C99821 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E6984225DD3B1D00C99821 /* Main.storyboard */; };
 		18E6984725DD3B1D00C99821 /* ViperBasic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18E6984525DD3B1D00C99821 /* ViperBasic.xcdatamodeld */; };
@@ -16,6 +15,10 @@
 		18E6984C25DD3B1E00C99821 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E6984A25DD3B1E00C99821 /* LaunchScreen.storyboard */; };
 		18E6985725DD3B1F00C99821 /* ViperBasicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6985625DD3B1F00C99821 /* ViperBasicTests.swift */; };
 		18E6986225DD3B1F00C99821 /* ViperBasicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6986125DD3B1F00C99821 /* ViperBasicUITests.swift */; };
+		18E6987425DD3BA200C99821 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6987325DD3BA200C99821 /* Router.swift */; };
+		18E6987625DD3C2300C99821 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6987525DD3C2300C99821 /* Protocol.swift */; };
+		18E6987825DD3C5900C99821 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6987725DD3C5900C99821 /* Presenter.swift */; };
+		18E6987A25DD3C8400C99821 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6987925DD3C8400C99821 /* Interactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,6 @@
 /* Begin PBXFileReference section */
 		18E6983925DD3B1D00C99821 /* ViperBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E6983C25DD3B1D00C99821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18E6983E25DD3B1D00C99821 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18E6984025DD3B1D00C99821 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18E6984325DD3B1D00C99821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18E6984625DD3B1D00C99821 /* ViperBasic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ViperBasic.xcdatamodel; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		18E6985D25DD3B1F00C99821 /* ViperBasicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperBasicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E6986125DD3B1F00C99821 /* ViperBasicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperBasicUITests.swift; sourceTree = "<group>"; };
 		18E6986325DD3B1F00C99821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E6987325DD3BA200C99821 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		18E6987525DD3C2300C99821 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		18E6987725DD3C5900C99821 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		18E6987925DD3C8400C99821 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +107,11 @@
 		18E6983B25DD3B1D00C99821 /* ViperBasic */ = {
 			isa = PBXGroup;
 			children = (
+				18E6987225DD3B8400C99821 /* Protocol */,
+				18E6987125DD3B7300C99821 /* Presenter */,
+				18E6987025DD3B5800C99821 /* Interactor */,
+				18E6986F25DD3B4C00C99821 /* Router */,
 				18E6983C25DD3B1D00C99821 /* AppDelegate.swift */,
-				18E6983E25DD3B1D00C99821 /* SceneDelegate.swift */,
 				18E6984025DD3B1D00C99821 /* ViewController.swift */,
 				18E6984225DD3B1D00C99821 /* Main.storyboard */,
 				18E6984825DD3B1E00C99821 /* Assets.xcassets */,
@@ -129,6 +138,38 @@
 				18E6986325DD3B1F00C99821 /* Info.plist */,
 			);
 			path = ViperBasicUITests;
+			sourceTree = "<group>";
+		};
+		18E6986F25DD3B4C00C99821 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				18E6987325DD3BA200C99821 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		18E6987025DD3B5800C99821 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				18E6987925DD3C8400C99821 /* Interactor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		18E6987125DD3B7300C99821 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				18E6987725DD3C5900C99821 /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		18E6987225DD3B8400C99821 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				18E6987525DD3C2300C99821 /* Protocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E6987825DD3C5900C99821 /* Presenter.swift in Sources */,
+				18E6987625DD3C2300C99821 /* Protocol.swift in Sources */,
 				18E6984125DD3B1D00C99821 /* ViewController.swift in Sources */,
+				18E6987425DD3BA200C99821 /* Router.swift in Sources */,
 				18E6983D25DD3B1D00C99821 /* AppDelegate.swift in Sources */,
-				18E6983F25DD3B1D00C99821 /* SceneDelegate.swift in Sources */,
+				18E6987A25DD3C8400C99821 /* Interactor.swift in Sources */,
 				18E6984725DD3B1D00C99821 /* ViperBasic.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
